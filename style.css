@@ -173,13 +173,43 @@ ul { list-style: none; }
 .tip__title { color: #2E7D6A; }
 .warn__title { color: #B8860B; }
 
-/* ===== タグ ===== */
-.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+/* ===== タグ（お店カードにつける目印） ===== */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
 .tag {
   font-size: 12px; font-weight: 700;
-  color: var(--orange); background: var(--orange-light);
   padding: 5px 13px; border-radius: 999px;
+  white-space: nowrap;
 }
+.tag--solo   { color: #2F7A9E;          background: #E3F0F6; }
+.tag--family { color: #2E7D6A;          background: var(--green-light); }
+.tag--girls  { color: #C24D85;          background: #FBE7F0; }
+.tag--group  { color: var(--orange-deep); background: var(--orange-light); }
+
+/* ===== しぼりこみフィルター ===== */
+.filter { margin: 4px 0 22px; }
+.filter__label {
+  font-size: 13px; font-weight: 700; color: var(--ink-soft);
+  margin-bottom: 10px;
+}
+.filter__chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter__chip {
+  font-family: inherit;
+  font-size: 13px; font-weight: 700;
+  color: var(--ink-soft); background: var(--bg-white);
+  border: 1.5px solid var(--line);
+  padding: 8px 16px; border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.filter__chip:hover { border-color: var(--orange); color: var(--orange); }
+.filter__chip--active {
+  color: #fff; background: var(--orange);
+  border-color: var(--orange);
+}
+.filter__chip--active:hover { color: #fff; }
+
+/* フィルターで隠れたお店カード */
+.spot--hidden { display: none; }
 
 /* ===== 担当者プロフィール（このページを書いた人） ===== */
 .author {

@@ -84,12 +84,43 @@
         </ul>
       </section>
 
-      <!-- ===== お店・スポットの紹介カード（紹介したい数だけコピー） ===== -->
+      <!-- ============================================================
+           お店・スポットの紹介
+           「お店ごとにカード1枚」で並べます。各カードに「タグ」をつけると、
+           上のフィルターでタイプ別にしぼりこめます。
+           ※モデルコース・気候など、お店リストでないページは
+             この <section> ごと消してOKです。
+           ============================================================ -->
       <section class="section">
         <h2 class="section__title">おすすめのお店・スポット</h2>
 
+        <!-- ▼ しぼりこみフィルター
+             お店が4軒以上あると便利です。
+             3軒以下のときは、この <div class="filter"> ... </div> ごと消してOK。 -->
+        <div class="filter">
+          <p class="filter__label">タイプでしぼりこむ</p>
+          <div class="filter__chips">
+            <button class="filter__chip filter__chip--active" data-filter="all">すべて</button>
+            <button class="filter__chip" data-filter="solo">ひとりOK</button>
+            <button class="filter__chip" data-filter="family">ファミリー</button>
+            <button class="filter__chip" data-filter="girls">女子会</button>
+            <button class="filter__chip" data-filter="group">グループ向け</button>
+          </div>
+        </div>
+
+        <!-- ▼ お店カード（1軒＝1枚）。下の <div class="spot"> ... </div> をコピーして増やします -->
         <div class="spot">
           <p class="spot__name">お店・スポットの名前</p>
+
+          <!-- ▼ タグ：当てはまるものだけ残し、当てはまらない行は消します。
+               使えるタグはこの4つだけ（新しい言葉は作らない）。複数つけてOK。 -->
+          <div class="tags">
+            <span class="tag tag--solo"   data-tag="solo">ひとりOK</span>
+            <span class="tag tag--family" data-tag="family">ファミリー</span>
+            <span class="tag tag--girls"  data-tag="girls">女子会</span>
+            <span class="tag tag--group"  data-tag="group">グループ向け</span>
+          </div>
+
           <dl class="spot__meta">
             <dt>場所</dt><dd>札幌市〇〇区〇〇（最寄り駅など。番地まで書かなくてOK）</dd>
             <dt>予算</dt><dd>1,000〜2,000円くらい</dd>
@@ -139,6 +170,29 @@
     <p>&copy; 2026 リベシティ北海道支部 ／ 北海道 旅のしおり</p>
     <p><a href="https://hokkaido-trip-guide.pages.dev">&#8592; 旅のしおりトップにもどる</a></p>
   </footer>
+
+  <!-- ===== しぼりこみフィルターの動き：このまま触らなくてOK ===== -->
+  <script>
+    (function () {
+      var chips = document.querySelectorAll('.filter__chip');
+      var spots = document.querySelectorAll('.spot');
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          chips.forEach(function (c) { c.classList.remove('filter__chip--active'); });
+          chip.classList.add('filter__chip--active');
+          var f = chip.getAttribute('data-filter');
+          spots.forEach(function (spot) {
+            var tags = Array.prototype.map.call(
+              spot.querySelectorAll('.tag'),
+              function (t) { return t.getAttribute('data-tag'); }
+            );
+            var show = (f === 'all') || (tags.indexOf(f) !== -1);
+            spot.classList.toggle('spot--hidden', !show);
+          });
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
