@@ -4,11 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ▼ ① ページの説明文（検索結果に出ます）。自分のページに合わせて書き換えてください -->
-  <meta name="description" content="札幌大交流会の旅のしおり。〇〇について地元目線で紹介します。" />
+  <meta name="description" content="レンタカーで行く北海道3日間ドライブプラン。1人でも最大4名でも楽しめる！札幌→滝川（グライダー・ジンギスカン）→旭川（旭山動物園）→美瑛・富良野（ラベンダー）を地元目線で紹介。" />
 
-  <!-- ▼ ② ブラウザのタブに出るタイトル。「〇〇」を自分のページのテーマに変えてください -->
-  <title>〇〇 | 北海道 旅のしおり</title>
+  <title>レンタカーで行く！北海道3日間ドライブプラン | 北海道 旅のしおり</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +15,7 @@
 </head>
 <body>
 
-  <!-- ===== 上部ナビ：このまま触らなくてOK（旅のしおりトップへ戻るボタン） ===== -->
+  <!-- ===== 上部ナビ ===== -->
   <header class="nav">
     <div class="nav__inner">
       <a class="nav__back" href="https://hokkaido-trip-guide.pages.dev">&#8592; 旅のしおりトップ</a>
@@ -28,105 +26,447 @@
   <main>
     <!-- ===== ページの見出し ===== -->
     <section class="hero wrap">
-      <!-- ▼ 小さなラベル。カテゴリを入れます（例：グルメ／観光／旅の準備 など） -->
-      <p class="hero__eyebrow">カテゴリ名</p>
+      <p class="hero__eyebrow">ドライブ旅 / モデルプラン / 1〜4名向け</p>
 
-      <!-- ▼ ページの大見出し -->
-      <h1 class="hero__title">ここにページのタイトル</h1>
+      <h1 class="hero__title">レンタカーで行く！<br />北海道の大地を満喫する<br />3日間ドライブプラン</h1>
 
-      <!-- ▼ このページで何が分かるか、2〜3行で -->
       <p class="hero__lead">
-        ここにリード文を書きます。<br />
-        道外から来てくれる仲間に向けて、このページを読むと何が分かるのかを伝えましょう。
+        レンタカーで１人でも、仲間と一緒でも楽しめる３日間のモデルプランです。<br />
+        滝川・旭川・美瑛・富良野を、北海道・滝川在住の地元目線でご案内します。
       </p>
 
-      <!-- ▼ メイン写真を入れる場合は、下の photo-ph を消して、コメントの中の figure を使ってください -->
-      <div class="photo-ph">ここにメイン写真（images フォルダに入れた写真）</div>
-      <!--
+      <!-- ↓ メイン写真：ご自身の写真に差し替える場合は src を「images/main.jpg」などに変更してください -->
       <figure class="hero__photo">
-        <img src="images/main.jpg" alt="写真がどんな内容かの説明" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Lavender_FarmTomita.jpg" alt="富良野ファーム富田のラベンダー畑。一面に広がる紫色の絨毯（仮の写真・後日差し替え予定）" />
       </figure>
-      -->
     </section>
 
     <div class="wrap">
 
-      <!-- ============================================================
-           ここから下が本文です。
-           セクションは「コピーして増やす／いらないものは消す」でOKです。
-           ============================================================ -->
-
-      <!-- ===== 本文セクション（文章・写真・リスト） ===== -->
+      <!-- ===== このプランのポイント ===== -->
       <section class="section">
-        <h2 class="section__title">見出し</h2>
-        <p>
-          ここに本文を書きます。地元の人だから知っているリアルな情報や、
-          実際に行ってよかった体験を書くと、読む人にとても喜ばれます。
-        </p>
-        <p>
-          段落を分けたいときは、このように &lt;p&gt; をもう一つ作ります。
-        </p>
-
-        <!-- 写真を入れる場所（写真ができたら photo-ph を消して下のコメントの figure に） -->
-        <div class="photo-ph">ここに写真</div>
-        <!--
-        <figure class="photo">
-          <img src="images/sample.jpg" alt="写真がどんな内容かの説明" />
-          <figcaption>写真のキャプション（ひとこと説明）</figcaption>
-        </figure>
-        -->
-
-        <!-- 伝えたいことを箇条書きにしたいとき -->
+        <h2 class="section__title">このプランの4つのポイント</h2>
         <ul class="list">
-          <li>伝えたいポイントを箇条書きで</li>
-          <li>3〜5個くらいが読みやすいです</li>
-          <li>いらなければ、このリストごと消してOK</li>
+          <li>🚗 レンタカーを使って、1人でも、グループでも自分たちのペースで動けます</li>
+          <li>🪂 滝川では日本でも珍しいグライダー体験！大空から北海道の大地を一望できます</li>
+          <li>🐧 旭山動物園はゆっくり半日かけてたっぷり楽しんでほしい、北海道屈指の名所です</li>
+          <li>🌸 7月はラベンダーが見ごろのピーク。富良野の紫色の畑は一度は見てほしい絶景です</li>
         </ul>
       </section>
 
-      <!-- ===== お店・スポットの紹介カード（紹介したい数だけコピー） ===== -->
+      <!-- ===== 3日間のルート早見表 ===== -->
       <section class="section">
-        <h2 class="section__title">おすすめのお店・スポット</h2>
+        <h2 class="section__title">3日間のルート早見表</h2>
+        <ul class="list">
+          <li>1日目：新千歳空港 or 札幌（出発）→ 砂川（寄り道）→ 滝川（泊）　※出発地により所要時間が異なります</li>
+          <li>2日目：滝川 → 旭川・旭山動物園（泊）　高速で約1時間20分・約60km</li>
+          <li>3日目：旭川 → 美瑛（青い池・丘）→ 富良野（ラベンダー）→ 札幌（帰着）　計約3〜4時間</li>
+        </ul>
+
+        <figure class="photo">
+          <img src="images/route-map.svg" alt="北海道3日間ドライブルート地図。札幌を出発し、滝川・旭川・美瑛・富良野を巡って札幌に戻るルートを示した地図" />
+          <figcaption>3日間のドライブルートイメージ。青・オレンジ・緑の線が各日の移動経路です</figcaption>
+        </figure>
+
+        <div class="warn">
+          <p class="warn__title">&#9888; 宿泊場所が取れない場合の逆ルートについて</p>
+          <strong>この時期の北海道は観光シーズン真っ只中！宿は1日でも早く押さえておくことをおすすめします。</strong><br /><br />
+          7月は人気の宿が早めに埋まることがあります。
+          希望の宿が取れない場合は <strong>逆ルート（札幌 → 富良野 → 美瑛 → 旭川 → 滝川 → 札幌）</strong> でも同様に楽しめます。
+          宿泊場所を先に押さえてから、全体の計画を立てるのがおすすめです。
+        </div>
+      </section>
+
+      <!-- ===== 1日目：札幌→滝川 ===== -->
+      <section class="section">
+        <h2 class="section__title">1日目：札幌を出発して、私の地元・滝川へ</h2>
+        <p>
+          新千歳空港か札幌市内のレンタカー店で車を借りてスタート。
+          高速を降りた瞬間に、視界がぱっと開けて北海道らしい大きな空が広がります。ここが私の地元です！
+        </p>
+        <div class="tip">
+          <p class="tip__title">&#128205; ミニ知識：このエリアの呼び名</p>
+          砂川・滝川があるエリアは、北海道の中でも「<strong>道央・空知地方</strong>（そらち）」、
+          さらに詳しくは「<strong>空知地方北部</strong>」と呼ばれる地域です。
+          札幌から車で北へ向かうにつれて、だんだんと畑が広がり、空が大きくなっていくのを感じられます。<br /><br />
+          ちなみに、漫画「<strong>銀魂</strong>」で有名な漫画家・<strong>空知英秋さん</strong>はこの空知地方のご出身で、ペンネームもここから来ているそうです！
+        </div>
+        <p>滝川までの移動時間の目安はこちらです。</p>
+        <ul class="list">
+          <li>🚗 <strong>札幌市内から</strong>：高速道路で約2時間、一般道で約2時間30分</li>
+          <li>✈ <strong>新千歳空港から</strong>：高速道路で約1時間40分が目安</li>
+        </ul>
+
+        <!-- ===== 途中の寄り道：砂川 ===== -->
+        <p>
+          滝川へ向かう途中で、<strong>砂川奈井江インター</strong>（滝川インターの1つ手前）を降りると「砂川（すながわ）」に寄り道できます。
+          砂川は北海道でも珍しい「スイーツの街」として知られており、ドライブのちょっとしたご褒美にぴったりです。
+        </p>
+
+        <div class="tip">
+          <p class="tip__title">🍰 すながわスイートロード</p>
+          国道12号沿いに10軒以上のスイーツ店が並ぶ、砂川市ならではのドライブコース。
+          和菓子・洋菓子・ソフトクリームなど、個性豊かなお店が揃っています。
+          ぜひ食べ比べしながら北に向かいましょう！<br />
+          &#128279; <a href="https://www.city.sunagawa.hokkaido.jp/kankou/sweetroad/" target="_blank" rel="noopener">すながわスイートロード（砂川市公式サイト）</a>
+        </div>
 
         <div class="spot">
-          <p class="spot__name">お店・スポットの名前</p>
+          <p class="spot__name">&#127822; ナカヤ菓子店（アップルパイ）</p>
           <dl class="spot__meta">
-            <dt>場所</dt><dd>札幌市〇〇区〇〇（最寄り駅など。番地まで書かなくてOK）</dd>
-            <dt>予算</dt><dd>1,000〜2,000円くらい</dd>
-            <dt>時間</dt><dd>11:00〜21:00（定休日：水曜）</dd>
+            <dt>場所</dt><dd>砂川市東1条南10丁目2-13（砂川奈井江ICから車で約5分）<br /><a href="https://www.google.com/maps/search/?api=1&query=ナカヤ菓子店+砂川" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>時間</dt><dd>9:30〜17:30（日曜定休）</dd>
           </dl>
           <p class="spot__body">
-            このお店・スポットのおすすめポイントや、行ってみた感想を書きます。
+            1日に最大2,000個売れることもある、北海道を代表するアップルパイのお店。
+            サクサクのパイ生地にゴロゴロのリンゴがたっぷり入っていて、見た目も豪快です。
+            人気商品は早めに売り切れることがあるので、午前中の立ち寄りがおすすめ。
+          </p>
+          <p class="spot__body">
+            💡 <strong>買い方はこうです：</strong>お店に入ったらまず<strong>整理券</strong>を取って、番号が呼ばれたら注文するスタイルです。
+            混んでいても焦らず、番号を待ちましょう。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://sweets-n.com/" target="_blank" rel="noopener">ナカヤ菓子店 公式サイト</a>
           </p>
         </div>
 
-        <!-- ↑ この <div class="spot"> ... </div> をコピーすれば、お店を増やせます -->
+        <div class="spot">
+          <p class="spot__name">&#127848; 岩瀬牧場（ジェラート）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>北海道砂川市一の沢237-6<br /><a href="https://www.google.com/maps/search/?api=1&query=岩瀬牧場+砂川" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>公式サイト</dt><dd><a href="https://iwasefarm.co.jp/" target="_blank" rel="noopener">🌐 岩瀬牧場 公式サイト</a></dd>
+          </dl>
+          <p class="spot__body">
+            自家製牛乳を使ったジェラートが人気の牧場直営スポット。
+            濃くてなめらかなミルク感は、新鮮な牧場ならでは。
+            <strong>向かいにあるレストランも美味しい</strong>ので、お腹が空いていたらぜひセットで立ち寄ってみてください。
+          </p>
+        </div>
+
+        <div class="spot">
+          <p class="spot__name">&#127856; 北菓楼 砂川本店（バウムクーヘン・夢不思議）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>北海道砂川市西1条北19丁目2番1号<br /><a href="https://www.google.com/maps/search/?api=1&query=北菓楼+砂川本店" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+          </dl>
+          <p class="spot__body">
+            北海道を代表するスイーツブランド「北菓楼（きたかろう）」の発祥の地がここ砂川。
+            しっとり柔らかい<strong>バウムクーヘン</strong>と、大きくてクリームたっぷりの<strong>シュークリーム「夢不思議」</strong>が看板商品です。
+            お土産にも喜ばれる一品。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://www.kitakaro.com/" target="_blank" rel="noopener">北菓楼 公式サイト</a>
+          </p>
+        </div>
+
+        <div class="spot">
+          <p class="spot__name">&#127981; SHIRO 砂川工場（無料工場見学）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>北海道砂川市豊沼町54-1（みんなの工場内）<br /><a href="https://www.google.com/maps/search/?api=1&query=SHIRO+砂川" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>料金</dt><dd>無料</dd>
+          </dl>
+          <p class="spot__body">
+            北海道発の人気コスメブランド「SHIRO（シロ）」の製品を作っている工場が砂川にあります。
+            運が良ければ実際に製品が作られている様子を見学できます。
+            おしゃれな空間でショッピングも楽しめるので、コスメ好きの方にも特におすすめ。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://shiro-shiro.jp/" target="_blank" rel="noopener">SHIRO 公式サイト</a>
+          </p>
+        </div>
+
+        <div class="tip">
+          <p class="tip__title">&#127774; ももさんのおすすめ砂川の回り方</p>
+          砂川のスイーツは種類が豊富なので、全部食べようとするとお腹がいっぱいに！
+          <strong>ナカヤのアップルパイ</strong>（午前中に確保）→ <strong>北菓楼で夢不思議</strong>→ <strong>岩瀬牧場でジェラート</strong>の順で回るのがおすすめです。
+          余裕があれば<strong>SHIROの工場見学</strong>もぜひ。スイーツ好きな方にとって砂川は本当に夢のような街ですよ！
+        </div>
+
+        <!-- グライダー動画 -->
+        <figure class="photo">
+          <video controls playsinline style="width:100%;border-radius:8px;">
+            <source src="images/glider.mp4" type="video/mp4" />
+            お使いのブラウザは動画の再生に対応していません。
+          </video>
+          <figcaption>たきかわスカイパークのグライダー体験飛行（ももさん撮影）</figcaption>
+        </figure>
+
+        <p>
+          グライダーは、エンジンを持たない飛行機です。まるで大きな紙飛行機のように、風の流れを体全体で感じながら空を滑るように飛びます。
+          飛び方もユニークで、まず小型のプロペラ機にロープでつないでもらい、空の高さまで引っ張り上げてもらいます。
+          ある高さに達したらロープを切り離し、そこからはエンジンの音もなく、ただ風だけを使った静かな単独飛行がはじまります。
+          眼下に広がる石狩平野の大パノラマを、音のない世界でじっくりと味わえる、ここだけの特別な体験です。
+        </p>
+
+        <div class="spot">
+          <p class="spot__name">&#127745; たきかわスカイパーク（グライダー体験飛行）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>滝川市中島町139-4<br /><a href="https://www.google.com/maps/search/?api=1&query=たきかわスカイパーク" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>料金</dt><dd>大人9,000円 / 小・中・高校生5,000円（飛行時間約10分・高度約500m）</dd>
+            <dt>時期</dt><dd>4月中旬〜11月中旬（ほぼ毎日運航）</dd>
+          </dl>
+          <p class="spot__body">
+            滝川は「グライダーのまち」として知られ、日本で最初に本格的なグライダー飛行が行われた場所です。
+            石狩平野を眼下に、エンジンなしで風だけを使って大空を飛ぶ体験はここだけのもの。
+            <strong>事前予約しておくと安心です。</strong>
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://www.takikawaskypark.jp/taikenhikou" target="_blank" rel="noopener">体験飛行の予約・詳細はこちら（たきかわスカイパーク公式）</a>
+          </p>
+        </div>
+
+        <div class="spot">
+          <p class="spot__name">&#127844; 松尾ジンギスカン 滝川本店</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>滝川市明神町3-5-12<br /><a href="https://www.google.com/maps/search/?api=1&query=松尾ジンギスカン+滝川本店" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>予算</dt><dd>2,000円〜</dd>
+            <dt>時間</dt><dd>11:00〜22:00（年中無休 ※12月31日〜1月1日を除く）</dd>
+          </dl>
+          <p class="spot__body">
+            1956年創業、味付けジンギスカンのパイオニア。
+            羊肉を甘めのタレに漬け込んだ松尾ジンギスカンは、北海道のソウルフードのひとつです。
+            「本物のジンギスカン」を本店でぜひ味わってみてください。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://www.matsuo1956.jp/shop/takikawa/" target="_blank" rel="noopener">松尾ジンギスカン 滝川本店 公式サイト</a>
+          </p>
+        </div>
+
+        <div class="tip">
+          <p class="tip__title">&#127839; ジンギスカン豆知識：札幌式と滝川式のちがい</p>
+          北海道のジンギスカンには2つのスタイルがあります。<br />
+          <strong>札幌式：</strong>生ラムをそのまま焼いて、あとからタレにつけて食べる。<br />
+          <strong>滝川式（松尾式）：</strong>生ラムをあらかじめタレに漬け込んで、焼いたらそのまま食べる。<br />
+          松尾ジンギスカン本店は「滝川式」発祥のお店。ほんのり甘いタレが染み込んだやわらかいラムは、一度食べたら忘れられない味です！
+        </div>
+
+        <div class="spot">
+          <p class="spot__name">&#127873; お土産：モンモオ（おかだ菓子舗）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>
+              本店：北海道滝川市空知町2丁目5-27<br />
+              支店：北海道滝川市栄町2丁目7-18（ベルロード店）<br />
+              ほか、札幌・新千歳空港でも購入可<br />
+              <a href="https://www.google.com/maps/search/?api=1&query=おかだ菓子舗+滝川" target="_blank" rel="noopener">📍 Googleマップで見る</a>
+            </dd>
+            <dt>予算</dt><dd>1個 140円</dd>
+          </dl>
+          <p class="spot__body">
+            滝川を代表するソウルスイーツ。手芒豆・牛乳・バターを使った白餡を、
+            醤油風味の皮で包んだ焼き菓子で、全国菓子大博覧会で大臣賞も受賞しています。
+            1日に1,000個以上売れる滝川の名物。ぜひ旅のお土産に！
+          </p>
+          <p class="spot__body">
+            <strong>&#127774; 滝川に来たら絶対これ！私が滝川で一番おすすめするお菓子です。</strong>
+            札幌や新千歳空港でも買えますが、せっかくなら地元・滝川で買っていってください。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://kankou-takikawa.jp/?p=140" target="_blank" rel="noopener">モンモオ詳細（たきかわ観光協会）</a>
+          </p>
+        </div>
+
+        <div class="spot">
+          <p class="spot__name">&#9832; 宿泊：滝川ふれ愛の里</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>北海道滝川市西滝川76-1<br /><a href="https://www.google.com/maps/search/?api=1&query=滝川ふれ愛の里" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>特徴</dt><dd>温泉あり・コテージ・グランピングも選べます（要予約）</dd>
+          </dl>
+          <p class="spot__body">
+            自然の中でゆっくり過ごせる施設です。温泉で1日目の疲れを癒やすのがおすすめ。
+            コテージやグランピングに宿泊したい場合は、<strong>事前予約が必須です</strong>。
+            特に7月は混み合うので、早めに押さえておきましょう。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://takikawa-fureainosato.jp/" target="_blank" rel="noopener">滝川ふれ愛の里 公式サイト</a>　／
+            &#128279; <a href="https://takikawa-camp.com/" target="_blank" rel="noopener">コテージ・グランピングの予約はこちら</a>
+          </p>
+        </div>
       </section>
 
-      <!-- ===== コツ・注意のボックス（必要なものだけ残す） ===== -->
+      <!-- ===== 2日目：滝川→旭川（旭山動物園） ===== -->
+      <section class="section">
+        <h2 class="section__title">2日目：旭山動物園でたっぷり半日</h2>
+        <p>
+          滝川から高速で約1時間20分、旭川へ。
+          着いたらまっすぐ旭山動物園へ向かいましょう。
+          「行動展示」と呼ばれる、動物の自然な動きを間近で見られる展示方法が有名で、
+          日本一と言われることもある動物園です。広いのでしっかり半日かけてじっくり回ってください。
+        </p>
+
+        <div class="spot">
+          <p class="spot__name">旭川市旭山動物園</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>旭川市東旭川町倉沼（旭川市街から車で約20分）<br /><a href="https://www.google.com/maps/search/?api=1&query=旭川市旭山動物園" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>料金</dt><dd>大人1,000円（2026年時点。公式サイトで要確認）</dd>
+            <dt>時間</dt><dd>夏期（4月下旬〜10月中旬）9:30〜17:15　最終入園16:00</dd>
+          </dl>
+          <p class="spot__body">
+            ペンギンが頭上を泳ぎ、ホッキョクグマが間近に見られる迫力の展示が楽しめます。
+            開園直後に入ると比較的空いていておすすめ。
+            暑い日はこまめに水分補給をしながら、全エリアをゆっくり回ってみてください。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/" target="_blank" rel="noopener">旭山動物園 公式サイト</a>
+          </p>
+        </div>
+
+        <!-- ↓ 旭山動物園の写真：ご自身の写真に差し替える場合は src を「images/zoo.jpg」などに変更してください -->
+        <figure class="photo">
+          <img src="images/zoo.jpg" alt="旭山動物園の様子" />
+          <figcaption>旭山動物園にて（ももさん撮影）</figcaption>
+        </figure>
+
+        <div class="spot">
+          <p class="spot__name">旭川ラーメン（夕食）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>旭川市内各所</dd>
+            <dt>予算</dt><dd>900〜1,300円くらい</dd>
+          </dl>
+          <p class="spot__body">
+            旭川ラーメンはしょうゆベースに豚骨・鶏がらをブレンドした、コクのある深い味わいが特徴。
+            「蜂屋」「梅光軒」「山頭火」などが有名です。
+            動物園でたっぷり歩いた後のラーメンは格別です！
+          </p>
+        </div>
+
+        <!-- 旭川特集ページへのリンク ⑦ -->
+        <div class="tip">
+          <p class="tip__title">&#128218; 旭川をもっと詳しく知りたい方へ</p>
+          旭川の観光スポット・グルメ・ショッピングを詳しく紹介した特集ページもご覧ください。<br />
+          <!-- ▼ 旭川特集ページが完成したら、下の href="#" を実際のURLに変えてください -->
+          <a href="#" style="font-weight:bold;">▶ 旭川特集ページを見る</a>（準備中）
+        </div>
+      </section>
+
+      <!-- ===== 3日目：美瑛→富良野→札幌 ===== -->
+      <section class="section">
+        <h2 class="section__title">3日目：美瑛の丘と富良野のラベンダーに感動する</h2>
+        <p>
+          旭川から車で約1時間、美瑛に到着。
+          なだらかな丘が続く農村風景は、まるで絵のよう。
+          そこから南へ約30分走ると、7月の富良野はラベンダーが見ごろを迎えています。
+          一面の紫色の畑は「これが北海道の夏だ！」と感じさせてくれる絶景です。
+        </p>
+
+        <div class="spot">
+          <p class="spot__name">青い池（美瑛）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>上川郡美瑛町白金（白金温泉エリア）<br /><a href="https://www.google.com/maps/search/?api=1&query=青い池+美瑛" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>料金</dt><dd>駐車場500円（普通車）</dd>
+            <dt>時間</dt><dd>日中いつでもOK。晴れた午前中が特にきれいです</dd>
+          </dl>
+          <p class="spot__body">
+            コバルトブルーの神秘的な池。天気や光の加減によって色が変わります。
+            Appleの壁紙にもなったことがある有名スポットです。早い時間に行くと混雑を避けられます。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://www.biei-hokkaido.jp/ja/sightseeing/shirogane-blue-pond/" target="_blank" rel="noopener">青い池 詳細ページ（美瑛町観光協会）</a>
+          </p>
+        </div>
+
+        <!-- ↓ 青い池の写真：ご自身の写真に差し替える場合は src を「images/blue-pond.jpg」などに変更してください -->
+        <figure class="photo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Blue_Pond_%28Aoiike%29_at_Biei%2C_Hokkaido%2C_Japan.jpg" alt="美瑛・青い池のコバルトブルーの水面（仮の写真・後日差し替え予定）" />
+          <figcaption>美瑛の青い池。天気によって色が変わる神秘的な場所です（写真：Wikimedia Commons）</figcaption>
+        </figure>
+
+        <div class="spot">
+          <p class="spot__name">パノラマロード（美瑛の丘ドライブ）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>美瑛町内（ケンとメリーの木・マイルドセブンの丘など）<br /><a href="https://www.google.com/maps/search/?api=1&query=美瑛+パノラマロード" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>料金</dt><dd>無料</dd>
+          </dl>
+          <p class="spot__body">
+            なだらかな丘に畑が広がるドライブコースです。
+            「ケンとメリーの木」「セブンスターの木」など、丘に立つ有名な木が点在しています。
+            ゆっくり走りながら自分だけのお気に入りの景色を見つけてみてください。
+          </p>
+        </div>
+
+        <!-- ↓ 美瑛の丘の写真：ご自身の写真に差し替える場合は src を「images/biei-hill.jpg」などに変更してください -->
+        <figure class="photo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Biei_colorful_crop_fields%2C_Hokkaido%3B_July_2017_%2801%29.jpg" alt="美瑛のカラフルな畑と丘の風景（7月）（仮の写真・後日差し替え予定）" />
+          <figcaption>7月の美瑛。緑の丘にカラフルな畑が広がります（写真：Wikimedia Commons）</figcaption>
+        </figure>
+
+        <!-- 美瑛特集ページへのリンク ⑧ -->
+        <div class="tip">
+          <p class="tip__title">&#128218; 美瑛をもっと詳しく知りたい方へ</p>
+          美瑛の観光スポットや写真スポットを詳しく紹介した特集ページもご覧ください。<br />
+          <!-- ▼ 美瑛特集ページが完成したら、下の href="#" を実際のURLに変えてください -->
+          <a href="#" style="font-weight:bold;">▶ 美瑛特集ページを見る</a>（準備中）
+        </div>
+
+        <div class="spot">
+          <p class="spot__name">ファーム富田（富良野）</p>
+          <dl class="spot__meta">
+            <dt>場所</dt><dd>空知郡中富良野町基線北15号<br /><a href="https://www.google.com/maps/search/?api=1&query=ファーム富田+富良野" target="_blank" rel="noopener">📍 Googleマップで見る</a></dd>
+            <dt>料金</dt><dd>入場無料</dd>
+            <dt>時間</dt><dd>8:30〜18:00ごろ（季節により変動。公式サイトで要確認）</dd>
+          </dl>
+          <p class="spot__body">
+            富良野ラベンダーの代名詞といえばここ。7月上〜中旬はラベンダーが見ごろのピークです。
+            なだらかな丘に広がる紫色の畑は圧巻で、ラベンダーの香りに包まれた空間は
+            道外のお客様に特に喜ばれます。
+          </p>
+          <p class="spot__body">
+            &#128279; <a href="https://www.farm-tomita.co.jp/" target="_blank" rel="noopener">ファーム富田 公式サイト</a>
+          </p>
+        </div>
+
+        <!-- ↓ 富良野ラベンダーの写真：ご自身の写真に差し替える場合は src を「images/lavender.jpg」などに変更してください -->
+        <figure class="photo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Lavender_FarmTomita.jpg" alt="富良野ファーム富田のラベンダー畑（仮の写真・後日差し替え予定）" />
+          <figcaption>ファーム富田のラベンダー畑。7月はここが旅のハイライトです（写真：Wikimedia Commons）</figcaption>
+        </figure>
+
+        <p>
+          富良野を満喫したら、高速道路で札幌へ。約2時間で到着します。
+          帰りの道中も、北海道の広大な景色をもう一度楽しみながら帰りましょう。
+        </p>
+
+        <!-- 富良野特集ページへのリンク ⑧ -->
+        <div class="tip">
+          <p class="tip__title">&#128218; 富良野をもっと詳しく知りたい方へ</p>
+          富良野のラベンダーやグルメ・観光スポットを詳しく紹介した特集ページもご覧ください。<br />
+          <!-- ▼ 富良野特集ページが完成したら、下の href="#" を実際のURLに変えてください -->
+          <a href="#" style="font-weight:bold;">▶ 富良野特集ページを見る</a>（準備中）
+        </div>
+      </section>
+
+      <!-- ===== コツ・注意事項 ===== -->
       <div class="tip">
-        <p class="tip__title">&#128161; ちょっとしたコツ</p>
-        知っておくと得する情報や、おすすめの楽しみ方をここに書きます。
+        <p class="tip__title">&#128161; レンタカー旅のコツ</p>
+        北海道の道は直線が長く、ついスピードが出てしまいます。制限速度を守って安全運転で。
+        ガソリンスタンドが少ないエリアもあるので、こまめに給油しておくと安心です。
+        旭川〜美瑛・富良野間は夏の繁忙期に混雑することも。時間に余裕を持って動きましょう。
       </div>
 
       <div class="warn">
         <p class="warn__title">&#9888; 注意してほしいこと</p>
-        予約が必要・混雑しやすい時間帯など、気をつけてほしいことをここに書きます。
+        北海道は距離感が本州と全然違います。「近そうで実は遠い」ことが多いので余裕のある計画を。
+        夕方や早朝は野生の鹿やキタキツネが道路に出てくることがあります。特にご注意を。
+        旭山動物園は夏の繁忙期に混雑します。開園直後の入園がおすすめです。
       </div>
 
-      <!-- ===== 担当者プロフィール：このページを書いた人 ===== -->
-      <!-- ▼ お名前・ひとこと・リベシティのプロフィールURLを入れてください -->
+      <!-- ===== ひと言メッセージ ===== -->
+      <div class="tip">
+        <p class="tip__title">&#128140; ご質問はお気軽に！</p>
+        滝川や近郊の街について、もっと知りたいことや気になることがあれば、リベシティのプロフィールページからお気軽にご連絡ください。
+        地元在住者として、できる限り詳しくご案内いたします😊
+      </div>
+
+      <!-- ===== 担当者プロフィール ===== -->
       <aside class="author">
-        <!-- 顔写真を入れる場合は、下の <div> を消して
-             <img class="author__avatar" src="images/me.jpg" alt="" /> に置きかえてください -->
-        <div class="author__avatar">&#128075;</div>
+        <img class="author__avatar" src="images/me.png" alt="ももさんのプロフィール画像" />
         <div class="author__body">
           <p class="author__label">このページを書いた人</p>
-          <p class="author__name">あなたのお名前（ニックネームでOK）</p>
+          <p class="author__name">ももさん＠むくみを治す人</p>
           <p class="author__bio">
-            自己紹介をひとこと。北海道との関わりや、ふだんの活動など。
+            北海道滝川市在住。あん摩マッサージ指圧師・医療リンパ浮腫セラピスト。
+            リベシティ北海道支部メンバー。地元・滝川を愛する旅好きです。
           </p>
-          <a class="author__link" href="リベシティのプロフィールURL" target="_blank" rel="noopener">
+          <a class="author__link" href="https://libecity.com/user_profile/J0A7ATvyU6Zpt7TxrXC2R31XryY2" target="_blank" rel="noopener">
             リベシティのプロフィールを見る &#8594;
           </a>
         </div>
@@ -140,5 +480,7 @@
     <p><a href="https://hokkaido-trip-guide.pages.dev">&#8592; 旅のしおりトップにもどる</a></p>
   </footer>
 
+  <!-- 共通フローティングナビ -->
+  <script src="https://floating-nav-assets.tsapp.workers.dev/floating-nav.js"></script>
 </body>
 </html>

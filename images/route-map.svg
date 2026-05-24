@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 415"
+     role="img" aria-label="北海道3日間ドライブルート地図">
+
+  <defs>
+    <!-- 矢印マーカー -->
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#555"/>
+    </marker>
+    <!-- 緑の矢印 -->
+    <marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#219a52"/>
+    </marker>
+    <!-- 影フィルター -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#00000033"/>
+    </filter>
+  </defs>
+
+  <!-- ===== 背景（海） ===== -->
+  <rect width="520" height="415" fill="#b8d9ee" rx="14"/>
+
+  <!-- ===== 北海道の輪郭 ===== -->
+  <!-- 実際の海岸線をもとにした簡略ポリゴン -->
+  <!-- 座標系：x=(経度-140)*75+25、y=(45.5-緯度)*86+10 -->
+  <polygon points="
+    34,358  55,364  74,352  84,332
+    78,310  70,287  72,264  90,256  96,270  102,283
+    112,272  130,262  155,265  188,278  225,302  262,322
+    295,270  320,248  352,215  385,196  415,180  438,158  448,133
+    422,106  408,120
+    384,133  345,140  308,120  274,108  244,86  215,68  188,52
+    168,8  148,24  142,62  150,108  144,148
+    126,160  104,168  75,182  59,200  70,216  48,244  35,324
+  "
+    fill="#dce9c0" stroke="#94b670" stroke-width="2"
+    stroke-linejoin="round" filter="url(#shadow)"/>
+
+  <!-- ===== ルートライン ===== -->
+
+  <!-- レンタカー移動：新千歳→札幌（点線グレー） -->
+  <line x1="152" y1="244" x2="129" y2="221"
+        stroke="#999" stroke-width="2" stroke-dasharray="5,4"
+        marker-end="url(#arr)"/>
+
+  <!-- 1日目：札幌→砂川（青） -->
+  <line x1="129" y1="221" x2="163" y2="188"
+        stroke="#2980b9" stroke-width="4"
+        stroke-linecap="round"/>
+  <!-- 1日目：砂川→滝川（青） -->
+  <line x1="163" y1="188" x2="168" y2="178"
+        stroke="#2980b9" stroke-width="4"
+        stroke-linecap="round"
+        marker-end="url(#arr)"/>
+
+  <!-- 2日目：滝川→旭川（オレンジ） -->
+  <line x1="168" y1="178" x2="203" y2="160"
+        stroke="#e67e22" stroke-width="4"
+        stroke-linecap="round"
+        marker-end="url(#arr)"/>
+
+  <!-- 3日目：旭川→美瑛（緑） -->
+  <line x1="203" y1="160" x2="210" y2="175"
+        stroke="#27ae60" stroke-width="3.5"
+        stroke-linecap="round"
+        marker-end="url(#arr-green)"/>
+
+  <!-- 3日目：美瑛→富良野（緑） -->
+  <line x1="210" y1="175" x2="204" y2="197"
+        stroke="#27ae60" stroke-width="3.5"
+        stroke-linecap="round"
+        marker-end="url(#arr-green)"/>
+
+  <!-- 3日目：富良野→札幌（緑・点線で帰路） -->
+  <line x1="204" y1="197" x2="132" y2="220"
+        stroke="#27ae60" stroke-width="3"
+        stroke-dasharray="7,4"
+        stroke-linecap="round"
+        marker-end="url(#arr-green)"/>
+
+  <!-- ===== 都市マーカー（ルートラインの上に描画） ===== -->
+
+  <!-- 新千歳空港 -->
+  <circle cx="152" cy="244" r="7" fill="#5dade2" stroke="white" stroke-width="2.5"/>
+
+  <!-- 札幌（スタート＆ゴール） -->
+  <circle cx="129" cy="221" r="11" fill="#e74c3c" stroke="white" stroke-width="3"/>
+
+  <!-- 砂川（スイーツ寄り道） -->
+  <circle cx="163" cy="188" r="6" fill="#ec407a" stroke="white" stroke-width="2.5"/>
+
+  <!-- 滝川 -->
+  <circle cx="168" cy="178" r="8" fill="#2980b9" stroke="white" stroke-width="2.5"/>
+
+  <!-- 旭川 -->
+  <circle cx="203" cy="160" r="8" fill="#e67e22" stroke="white" stroke-width="2.5"/>
+
+  <!-- 美瑛 -->
+  <circle cx="210" cy="175" r="7" fill="#27ae60" stroke="white" stroke-width="2.5"/>
+
+  <!-- 富良野 -->
+  <circle cx="204" cy="197" r="7" fill="#27ae60" stroke="white" stroke-width="2.5"/>
+
+  <!-- ===== テキストラベル ===== -->
+
+  <!-- 新千歳空港 -->
+  <line x1="152" y1="251" x2="152" y2="265" stroke="#666" stroke-width="1"/>
+  <text x="152" y="278" font-family="sans-serif" font-size="11.5"
+        fill="#1a5276" text-anchor="middle" font-weight="bold">✈ 新千歳空港</text>
+
+  <!-- 札幌 -->
+  <text x="114" y="217" font-family="sans-serif" font-size="14"
+        fill="#c0392b" text-anchor="end" font-weight="bold">札幌</text>
+  <text x="114" y="230" font-family="sans-serif" font-size="9"
+        fill="#c0392b" text-anchor="end">▶ スタート／ゴール</text>
+
+  <!-- 滝川 -->
+  <line x1="161" y1="173" x2="143" y2="158" stroke="#555" stroke-width="0.8"/>
+  <text x="139" y="155" font-family="sans-serif" font-size="12"
+        fill="#1a5276" text-anchor="end" font-weight="bold">滝川</text>
+  <text x="139" y="167" font-family="sans-serif" font-size="9"
+        fill="#555" text-anchor="end">泊：ふれ愛の里</text>
+
+  <!-- 砂川（滝川ラベルの真下に配置） -->
+  <line x1="158" y1="185" x2="143" y2="180" stroke="#555" stroke-width="0.8"/>
+  <text x="139" y="179" font-family="sans-serif" font-size="11"
+        fill="#b5194b" text-anchor="end" font-weight="bold">砂川</text>
+  <text x="139" y="191" font-family="sans-serif" font-size="9"
+        fill="#555" text-anchor="end">スイートロード</text>
+
+  <!-- 旭川 -->
+  <line x1="211" y1="157" x2="231" y2="141" stroke="#555" stroke-width="0.8"/>
+  <text x="235" y="139" font-family="sans-serif" font-size="12"
+        fill="#c0680a" font-weight="bold">旭川</text>
+  <text x="235" y="151" font-family="sans-serif" font-size="9"
+        fill="#555">泊：旭川市内</text>
+
+  <!-- 美瑛 -->
+  <line x1="217" y1="172" x2="242" y2="163" stroke="#555" stroke-width="0.8"/>
+  <text x="246" y="167" font-family="sans-serif" font-size="12"
+        fill="#1a7a40" font-weight="bold">美瑛</text>
+  <text x="246" y="179" font-family="sans-serif" font-size="9"
+        fill="#555">青い池・丘の風景</text>
+
+  <!-- 富良野 -->
+  <line x1="211" y1="197" x2="242" y2="197" stroke="#555" stroke-width="0.8"/>
+  <text x="246" y="201" font-family="sans-serif" font-size="12"
+        fill="#1a7a40" font-weight="bold">富良野</text>
+  <text x="246" y="213" font-family="sans-serif" font-size="9"
+        fill="#555">ラベンダー畑</text>
+
+  <!-- ===== 凡例 ===== -->
+  <rect x="14" y="320" width="168" height="80" fill="white" fill-opacity="0.88" rx="8"/>
+  <text x="98" y="337" font-family="sans-serif" font-size="11"
+        fill="#333" text-anchor="middle" font-weight="bold">ルート凡例</text>
+  <!-- 1日目 -->
+  <line x1="24" y1="350" x2="52" y2="350" stroke="#2980b9" stroke-width="3.5"/>
+  <text x="58" y="354" font-family="sans-serif" font-size="10" fill="#333">1日目：札幌 → 滝川</text>
+  <!-- 2日目 -->
+  <line x1="24" y1="365" x2="52" y2="365" stroke="#e67e22" stroke-width="3.5"/>
+  <text x="58" y="369" font-family="sans-serif" font-size="10" fill="#333">2日目：滝川 → 旭川</text>
+  <!-- 3日目 -->
+  <line x1="24" y1="380" x2="52" y2="380" stroke="#27ae60" stroke-width="3.5"/>
+  <text x="58" y="384" font-family="sans-serif" font-size="10" fill="#333">3日目：旭川 → 札幌</text>
+
+  <!-- ===== タイトル ===== -->
+  <rect x="196" y="386" width="310" height="24" fill="white" fill-opacity="0.8" rx="5"/>
+  <text x="351" y="403" font-family="sans-serif" font-size="12"
+        fill="#2c3e50" text-anchor="middle" font-weight="bold">北海道 3日間ドライブルート（1〜4名）</text>
+
+</svg>
